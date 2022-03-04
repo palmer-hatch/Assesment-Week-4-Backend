@@ -14,7 +14,7 @@ app.get("/api/compliment", (req, res) => {
 					 "Your Javascript skills are stellar.",
   ];
 
-  // choose random compliment
+  // choose random fortune
   let randomIndex = Math.floor(Math.random() * compliments.length);
   let randomCompliment = compliments[randomIndex];
 
@@ -23,17 +23,17 @@ app.get("/api/compliment", (req, res) => {
 });
 
 
-app.get("/api/compliment", (req, res) => {
-  const compliments = ["Gee, you're a smart cookie!",
-					 "Cool shirt!",
-					 "Your Javascript skills are stellar.",
+app.get("/api/fortune", (req, res) => {
+  const fortunes = ["Your desired journey is soon near",
+					 "A Payoff for your hard work will soon be rewarded",
+					 "Your future spouse will be impressive",
   ];
 
-  // choose random compliment
-  let randomIndex = Math.floor(Math.random() * compliments.length);
-  let randomCompliment = compliments[randomIndex];
+  // choose random fortune
+  let randomIndex = Math.floor(Math.random() * fortunes.length);
+  let randomFortune = fortunes[randomIndex];
 
-  res.status(200).send(randomCompliment);
+  res.status(200).send(randomFortune);
   
 });
 
