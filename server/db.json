@@ -1,0 +1,18 @@
+[
+    {
+      "id": 1,
+      "book": "The Great Gatsby",
+      "genre": "realistic fiction"
+    },
+    {
+      "id": 2,
+      "book": "When the Game was Ours",
+      "genre": "biography"
+    },
+    {
+      "id": 3,
+      "book": "Can't Hurt Me",
+      "genre": "autobiography"
+    }
+    
+  ]
