@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 
-const {createBook, getBooks} = require('./controller')
+const {createBook, getBooks, deleteBook,updateBook} = require('./controller')
 
 
 const app = express();
@@ -46,7 +46,8 @@ app.get("/api/fortune", (req, res) => {
 // endpoints
 app.get('/api/books', getBooks)
 app.post('/api/books', createBook)
-
+app.delete('/api/books/:idm', deleteBook)
+app.put('/api/books/:idm', updateBook)
 
 
 
